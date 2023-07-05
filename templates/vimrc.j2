@@ -4,3 +4,13 @@ set clipboard=unnamedplus
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Makefile
+autocmd Filetype make setlocal noexpandtab
+
+" yml,yaml
+autocmd Filetype yaml setlocal shiftwidth=2 tabstop=2
+
+" tf
+au! BufRead,BufNewFile *.tf setlocal shiftwidth=2 tabstop=2
+
