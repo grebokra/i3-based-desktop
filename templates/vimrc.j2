@@ -14,3 +14,11 @@ autocmd Filetype yaml setlocal shiftwidth=2 tabstop=2
 " tf
 au! BufRead,BufNewFile *.tf setlocal shiftwidth=2 tabstop=2
 
+
+" gvim options
+if has("gui_running")
+    set guifont=Iosevka\ Term\ Bold\ 15
+    set noerrorbells
+    set vb t_vb=
+    set number
+endif
