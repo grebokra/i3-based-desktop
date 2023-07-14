@@ -88,6 +88,12 @@
         dest: "/home/{{ desktop_user }}/.bash_profile"
       tags: non-essential
 
+    - name: Set bashrc
+      template:
+        src: bashrc.j2
+        dest: "/home/{{ desktop_user }}/.bashrc"
+      tags: non-essential
+
     - name: Ensure dunst config directory created
       file:
         path: "/home/{{ desktop_user }}/.config/dunst"
