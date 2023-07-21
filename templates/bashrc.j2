@@ -30,6 +30,9 @@ export HISTIGNORE=":pwd:id:uptime:resize:ls:clear:history:htop:top:glances:"
 ## ignore spaces before commands an duplicate entries
 export HISTCONTROL=ignoredups
 
+## Insert commands to history immediatly
+export PROMPT_COMMAND="history -a; history -n"
+
 # TERMINAL WINDOW
 ## check window size changes
 shopt -s checkwinsize
