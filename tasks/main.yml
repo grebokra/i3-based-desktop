@@ -82,6 +82,12 @@
         dest: "/home/{{desktop_user}}/.xinitrc"
       tags: desktop
 
+    - name: Set .Xresources
+      template:
+        src: Xresources.j2
+        dest: "/home/{{desktop_user}}/.Xresources"
+      tags: desktop
+
     - name: Set profile
       template:
         src: bash_profile.j2
