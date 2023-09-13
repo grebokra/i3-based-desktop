@@ -14,8 +14,9 @@ set relativenumber
 " Makefile
 autocmd Filetype make setlocal noexpandtab
 
-" yml,yaml
+" yml,yaml,bu
 autocmd Filetype yaml setlocal shiftwidth=2 tabstop=2
+au! BufRead,BufNewFile *.bu setlocal shiftwidth=2 tabstop=2
 
 " tf
 au! BufRead,BufNewFile *.tf setlocal shiftwidth=2 tabstop=2
