@@ -21,9 +21,11 @@ au! BufRead,BufNewFile *.bu setlocal shiftwidth=2 tabstop=2
 " tf
 au! BufRead,BufNewFile *.tf setlocal shiftwidth=2 tabstop=2
 
+colorscheme industry
 
 " gvim options
 if has("gui_running")
+    colorscheme default
     set guifont=Iosevka\ Term\ Bold\ 15
     set noerrorbells
     set vb t_vb=
