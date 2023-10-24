@@ -1,4 +1,12 @@
+# This file has been put here by anisble.
+# For more info see https://github.com/grebokra/autorice.git
+
+# Please do not change this file by hand unless you are sure
+# you are not going to run playbook against this host or your
+# changes will be lost on next playbook run.
+
 # ~/.xinitrc
+
 TERM=xterm
 export TERM
 
@@ -45,20 +53,7 @@ WINDOW_MANAGER=$WINDOWMANAGER
 STARTUP=$WINDOWMANAGER
 export WINDOWMANAGER WINDOW_MANAGER STARTUP
 
-#
-# Start the XIM server
-#
-if [ -r /etc/X11/xim ]; then
-    XIMFILE=/etc/X11/xim
-elif [ -r /usr/etc/X11/xim ]; then
-    XIMFILE=/usr/etc/X11/xim
-fi
-test -r $HOME/.xim && XIMFILE=$HOME/.xim
-test -r $XIMFILE   && source $XIMFILE
-
-#
 # Enable Numlock if set
-#
 if test -r /var/run/numlock-on && type -p numlockx > /dev/null ; then
     numlockx
 fi
@@ -83,9 +78,7 @@ elif test -s $XUSRETCDIR/Xkbmap ; then
     test -r $XUSRETCDIR/Xkbmap && cat $XUSRETCDIR/Xkbmap | xkbcomp - $DISPLAY
 fi
 
-#
 # Handle the system and the users Xresources
-#
 if test -r "$xdefaults"  ; then
     if test -r $XETCDIR/Xresources ; then
 	xrdb -nocpp -load   -retain $XETCDIR/Xresources
