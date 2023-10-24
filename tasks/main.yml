@@ -129,6 +129,7 @@
         src: tmux.conf.j2
         dest: /etc/tmux.conf
       tags: desktop
+      become: yes
 
     - name: Set vim configuration
       template:
