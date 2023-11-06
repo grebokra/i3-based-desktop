@@ -13,6 +13,7 @@ opensuse_desktop_packages:
   - dmenu
   - bc
   - sakura
+  - xterm
   - tmux
   - gvim
   - iosevka-fonts
@@ -68,6 +69,7 @@ i3_config_mon_brightness_down_shortcut: "XF86MonBrightnessDown"
 i3_config_print_screen_shortcut: "Print"
 
 ## applications
+i3_config_default_terminal_command: "xterm"
 i3_config_start_terminal_shortcut: "$mod+Return"
 i3_config_start_launcher_shortcut: "$mod+d"
 

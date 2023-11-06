@@ -56,7 +56,7 @@ bindsym {{ i3_config_mon_brightness_down_shortcut }} exec sh -c 'echo "$(cat /sy
 floating_modifier $mod
 
 # start a terminal
-bindsym {{ i3_config_start_terminal_shortcut }} exec st #i3-sensible-terminal
+bindsym {{ i3_config_start_terminal_shortcut }} exec {{ i3_config_default_terminal_command }} #i3-sensible-terminal
 
 # kill focused window
 bindsym {{ i3_config_kill_focused_window_shortcut }} kill
