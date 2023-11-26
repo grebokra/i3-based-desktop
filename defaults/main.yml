@@ -16,7 +16,6 @@ opensuse_desktop_packages:
   - xterm
   - tmux
   - gvim
-  - iosevka-fonts
   - xrandr
   - arandr
   - mc 
@@ -29,8 +28,6 @@ opensuse_desktop_packages:
   - dunst 
   - libnotify-tools
   - flatpak
-  - noto-fonts
-  - intlfonts-japanese-bitmap-fonts
   - sysfsutils
   - bluez
   - blueman
@@ -43,6 +40,10 @@ opensuse_desktop_packages:
   - engrampa
   - screengrab
   - xss-lock
+  - noto-fonts
+  - intlfonts-japanese-bitmap-fonts
+  - iosevka-fonts
+  - google-noto-coloremoji-fonts
 
 i3_config_font_size: 12
 i3_config_font: Iosevka Term Medium
